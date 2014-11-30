@@ -15,14 +15,22 @@ source $HOME/.vim/rc/3rdparty.vim
 source $HOME/.vim/rc/keybindings.vim
 source $HOME/.vim/rc/abbr.vim
 
+
+" ir_black has little contrast in the terminal. 
+" Hence elflord for vim.
 if has('gui_running')
     colorscheme ir_black
 else
     colorscheme elflord
 endif
+
+" Enable syntax highlighting
 syntax on
 
 " Autocmds
 autocmd BufEnter * :syntax sync fromstart " ensure every file does syntax highlighting (full)
-au! CursorHold *.[ch] nested call PreviewWord() 
+
+
+" FIXME[KR]: Check if this is needed
+" au! CursorHold *.[ch] nested call PreviewWord() 
 
