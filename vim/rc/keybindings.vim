@@ -19,6 +19,9 @@ map ,e   <Esc>:e <C-R>=expand("%:h")<CR>/
 " file present
 nnoremap K :Ag "<C-R><C-W>"<CR>:cw<CR> 
 
+" fs for filesearch: Involve CtrlP in filesearch mode
+nnoremap fs :CtrlP<CR>
+
 " Keybindings
 " Motion keys:
 " (Warning! Can be dangerous for beginners)
