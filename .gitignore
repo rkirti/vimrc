@@ -4,3 +4,6 @@
 viminfo
 # Not sure why .netrwhist exists here, but keep away from git repo
 .netrwhist
+# Cscope/Ctags stuff. It shouldn't be here in the first place.
+tags
+cscope.out
