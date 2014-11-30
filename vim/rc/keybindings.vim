@@ -1,3 +1,13 @@
+" Quickly timeout on keycodes but never timeout on mappings
+set notimeout ttimeout ttimeoutlen=200
+
+" Space opens/closes folds
+" noremap <Space> za
+
+" Move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+
 " Keybindings
 " Motion keys:
 " (Warning! Can be dangerous for beginners)
@@ -52,8 +62,7 @@ imap  <silent> <F7>    <Esc>:exe ":ptag ".expand("<cword>")<CR>
 
 " Copy the current position, into previously accessed buffer
 map \o                 <Esc>:call CopyCat() <CR>
-map ,e                  <Esc>:e <C-R>=expand("%:h")<CR>/
+map ,e                 <Esc>:e <C-R>=expand("%:h")<CR>/
 
 " Map jj for escape
 imap jj <Esc>
-
