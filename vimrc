@@ -17,7 +17,7 @@ source ~/.vim/rc/keybindings.vim
 source ~/.vim/rc/abbr.vim
 source ~/.vim/rc/ui.vim          
 
-colorscheme koehler
+colorscheme ir_black
 syntax on
 
 " Autocmds
@@ -25,4 +25,4 @@ autocmd BufEnter * :syntax sync fromstart " ensure every file does syntax highli
 "Kirtika: Disabled for now
 "au! CursorHold *.[ch] nested call PreviewWord() 
 
-set guifont=Monospace\ 14
+set guifont=Monaco
