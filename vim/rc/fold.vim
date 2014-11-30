@@ -6,3 +6,4 @@ set foldmethod=indent   " Make folding indent sensitive
 set foldopen+=search    " open folds when you search into them
 set foldopen+=undo      " open folds when you undo stuff
 set foldnestmax=10      " 10 nested folds max.
+set foldlevel=3         " Only close folds nested 3 or deeper
