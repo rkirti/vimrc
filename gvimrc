@@ -1,5 +1,4 @@
 source ~/.vimrc
-" colorscheme metacosm
 set guioptions=
-set guifont=Monospace\ 14
+set guifont=Inconsolata\ Medium\ 12
 
