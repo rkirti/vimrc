@@ -2,3 +2,5 @@
 .*.sw*
 # current settings lead to viminfo being saved in the .vim folder
 viminfo
+# Not sure why .netrwhist exists here, but keep away from git repo
+.netrwhist

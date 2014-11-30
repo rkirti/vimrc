@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/kirtika/Code/pumice/production/sw/nestlabs/mfg-diags'
-let g:netrw_dirhist_2='/home/kirtika/Code/dolomite/production/sw/nestlabs/apps/topaz/app/src'
-let g:netrw_dirhist_3='/home/kirtika/Code/dolomite/production/sw/nestlabs/apps/topaz/app/src/controllers'
-let g:netrw_dirhist_4='/home/kirtika/Code/pumice/production/sw/nestlabs/apps/smoke/actions'
