@@ -3,7 +3,9 @@ set wildmode=longest:full,full " Match as much as possible, and then on second t
 set wildignore=*.bak,*.o,*.e,*~ " Ignore temporary files, and stuff you'll never want to open
 set ruler   " Show the cursor position at the bottom
 set cmdheight=2     " Commandline usage
-set statusline=%F%m%r%h%w\ [%Y]\ [%04l,%04v][%p%%]\ [LEN=%L]\ %{VimBuddy()} " Status line shows filename (and some mode information), filetype, cursor position, and length of the file. The VimBuddy is a fun plugin for the heck of it
+" Status line shows filename (and some mode information), filetype, cursor position, and length of the file.
+set statusline=%F%m%r%h%w\ [%Y]\ [%04l,%04v][%p%%]\ [LEN=%L]
+set statusline+=%{fugitive#statusline()}
 set laststatus=2    " always show the status line
 set number          " Show line numbers
 set showcmd         " Show the unfinished command. Pretty useful
@@ -13,3 +15,6 @@ set shortmess=atI   " Keep error messages short
 set nowrap          " Don't wrap.
 set linebreak       " If you *do* enable wrap, break at friendly characters (like space or hyphen)
 set guicursor=a:blinkon0
+set nomodeline      " Don't think its a wise idea to have text in the file specifying vim settings. Also, security vulnerabilities. So turn this off.
+set backspace=indent,eol,start "Some systems need this explicitly.
+set confirm         " Instead of failing a command due to unsaved changes, ask if you want to save them.
