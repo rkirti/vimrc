@@ -1,2 +1,4 @@
 # vim swap files
 .*.sw*
+# current settings lead to viminfo being saved in the .vim folder
+viminfo
