@@ -22,6 +22,9 @@ nnoremap K :Ag "<C-R><C-W>"<CR>:cw<CR>
 " fs for filesearch: Involve CtrlP in filesearch mode
 nnoremap fs :CtrlP<CR>
 
+" Clear search highlight
+map   <silent> <F4>    :nohl<CR>
+
 " Keybindings
 " Motion keys:
 " (Warning! Can be dangerous for beginners)
