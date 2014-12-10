@@ -18,3 +18,8 @@ set guicursor=a:blinkon0
 set nomodeline      " Don't think its a wise idea to have text in the file specifying vim settings. Also, security vulnerabilities. So turn this off.
 set backspace=indent,eol,start "Some systems need this explicitly.
 set confirm         " Instead of failing a command due to unsaved changes, ask if you want to save them.
+
+" This works well for ir_black colorscheme. with others its distracting/annoying
+set cursorcolumn
+set cursorline
+
