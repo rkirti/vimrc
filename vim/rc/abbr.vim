@@ -6,3 +6,5 @@ iab xname "Kirtika Ruchandani"
 " Useful for code comments to mark todos
 iab fx    FIXME[KR]:
 iab todo  TODO[KR]:
+" Useful for C debugging
+iab dumpline printf("%d %s\n",__LINE__, __func__);
