@@ -53,6 +53,7 @@ function! s:LinuxCodingStyle()
     call s:LinuxFormatting()
     call s:LinuxKeywords()
     call s:LinuxHighlighting()
+    call s:LinuxFolding()
 endfunction
 
 function s:LinuxFormatting()
@@ -84,6 +85,12 @@ function s:LinuxHighlighting()
     " something
     autocmd InsertEnter * match LinuxError /\s\+\%#\@<!$/
     autocmd InsertLeave * match LinuxError /\s\+$/
+endfunction
+
+function s:LinuxFolding()
+    set foldmethod=indent
+    set foldlevel=99
+    nnoremap <space> za
 endfunction
 
 " vim: ts=4 et sw=4
