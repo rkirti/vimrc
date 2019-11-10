@@ -1,7 +1,7 @@
 " Kirtika Ruchandani <kirtibr@gmail.com>
 " This vimrc is distributed into many smaller files.
 
-set runtimepath=$HOME/.vim,/usr/share/vim,/usr/share/vim/vim74/
+set runtimepath=$HOME/.vim,/usr/share/vim,/usr/share/vim/vim81/
 
 let g:username="Kirtika Ruchandani"
 
